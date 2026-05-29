@@ -1,0 +1,70 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="iniconfig" />
+          <option value="packaging" />
+          <option value="pluggy" />
+          <option value="Pygments" />
+          <option value="pytest" />
+          <option value="pytest-asyncio" />
+          <option value="aiosqlite" />
+          <option value="alembic" />
+          <option value="allure-pytest" />
+          <option value="allure-python-commons" />
+          <option value="annotated-doc" />
+          <option value="annotated-types" />
+          <option value="anyio" />
+          <option value="asyncio" />
+          <option value="asyncpg" />
+          <option value="attrs" />
+          <option value="authx" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="cryptography" />
+          <option value="ecdsa" />
+          <option value="Faker" />
+          <option value="fastapi" />
+          <option value="greenlet" />
+          <option value="h11" />
+          <option value="httpcore" />
+          <option value="httpx" />
+          <option value="idna" />
+          <option value="itsdangerous" />
+          <option value="Mako" />
+          <option value="MarkupSafe" />
+          <option value="psycopg2" />
+          <option value="pyasn1" />
+          <option value="pycparser" />
+          <option value="pydantic" />
+          <option value="pydantic-settings" />
+          <option value="pydantic_core" />
+          <option value="PyJWT" />
+          <option value="python-dateutil" />
+          <option value="python-dotenv" />
+          <option value="python-jose" />
+          <option value="pytz" />
+          <option value="rsa" />
+          <option value="six" />
+          <option value="SQLAlchemy" />
+          <option value="starlette" />
+          <option value="typing-inspection" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="uvicorn" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="types.NoneType.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
