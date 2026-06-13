@@ -1,3 +1,4 @@
+from application.shared.middlewares.console_logger import log_to_console
 from contextlib import asynccontextmanager
 
 import uvicorn
@@ -24,6 +25,8 @@ def create_app() -> FastAPI:
     )
     # routers
     app.include_router(task_router)
+    # middlewares
+    app.middleware("http")(log_to_console)
 
     return app
 
