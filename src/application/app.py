@@ -1,10 +1,11 @@
+from application.shared.exception_handler.exception_handler import ExceptionHandler
 from application.shared.middlewares.console_logger import log_to_console
 from contextlib import asynccontextmanager
 
 import uvicorn
 from fastapi import FastAPI
 
-from application.task.routes import task_router
+from application.task.routers import task_router
 from core.database.base import CoreModel
 from core.database.session import engine
 
@@ -27,6 +28,9 @@ def create_app() -> FastAPI:
     app.include_router(task_router)
     # middlewares
     app.middleware("http")(log_to_console)
+
+    # exception handler
+    ExceptionHandler(app)
 
     return app
 

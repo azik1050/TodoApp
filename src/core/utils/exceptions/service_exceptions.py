@@ -1,14 +1,21 @@
-class RecordNotFound(Exception):
-    pass
+from abc import ABC
 
 
-class RecordAlreadyExists(Exception):
-    pass
+class BaseServiceException(ABC, Exception):
+    status_code: int
 
 
-class RuleViolation(Exception):
-    pass
+class RecordNotFound(BaseServiceException):
+    status_code = 404
 
 
-class ServerError(Exception):
-    pass
+class RecordAlreadyExists(BaseServiceException):
+    status_code = 404
+
+
+class RuleViolation(BaseServiceException):
+    status_code = 400
+
+
+class ServerError(BaseServiceException):
+    status_code = 500
