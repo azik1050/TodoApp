@@ -18,4 +18,7 @@ class Logger:
     def info(self, message: str):
         self.logger.info(f"[{DataGenerator.get_guid()}] {message}")
 
+    def error(self, message: str):
+        self.logger.error(f"[{DataGenerator.get_guid()}] {message}")
+
 console_logger = Logger()
