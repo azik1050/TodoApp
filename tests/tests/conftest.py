@@ -32,7 +32,9 @@ def client(test_client):
 @pytest.fixture
 def task(task_client) -> TaskRead:
     """Create a task and return a validated TaskRead model instance."""
-    task = TaskWrite(title="Test Task", content="This is a test task.", priority=TaskPriority.MEDIUM)
+    task = TaskWrite(
+        title="Test Task", content="This is a test task.", priority=TaskPriority.MEDIUM
+    )
     response = task_client.create_task(task.model_dump(by_alias=True))
     assert response.status_code == 201
     return TaskRead.model_validate(response.json())

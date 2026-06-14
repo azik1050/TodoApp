@@ -19,3 +19,6 @@ class TaskClient:
 
     def update_task(self, task_id: int, json: dict):
         return self._session.put(f"/tasks/{task_id}", json=json)
+
+    def create_task_comment(self, task_id: int, json: dict):
+        return self._session.post(f"/tasks/{task_id}/comments", json=json)
