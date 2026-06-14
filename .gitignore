@@ -7,6 +7,7 @@ wheels/
 *.egg-info
 .uv-cache/
 .uv-python/
+.idea/
 
 # Virtual environments
 .venv
